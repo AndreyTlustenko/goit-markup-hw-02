@@ -1,17 +1,42 @@
-.header a { color: #212121;}
-.header a:hover,
-.header a:focus
- {    color: #2196F3;}
-
-body { font-family: "Roboto", sans-serif;
-font-size: 16px;
-color: #FFFFFF;
+:root {--primary_text-color: #757575; 
+--title-color: #212121;
+--accent-color: #2196F3; 
 }
 
+body { font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: var(--primary_text-color);
+    }
+.header { font-family: 'Roboto';
+font-weight: 500;
+font-size: 14px;
+line-height: 1,14;
+}
+.header-list {color:  var(--title-color);}
+.list { color: var(--primary_text-color);}
+.header .logo {color: var(--accent-color);}
+.header a:hover,
+.header a:focus { color: var(--accent-color);}
+
+.logo {display: flex;  
+    font-family: "Ralevey";
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 26px;
+    line-height: 1,19;
+    }
+.logo-web {color: var(--title-color);}
+
+.h1 {background: #2F303A; 
+    color: #FFFFFF;
+}
 .button {
-color: #212121;
-border-radius: 4px;
-line-height: 2;
+font-family: "Roboto";
+font-weight: 500;
+font-size: 16px;
+line-height: 1,62;
+text-align: center;
+color: var(--title-color);
 cursor: pointer;
 border: none;
 }
@@ -21,18 +46,43 @@ border: none;
 .button:active
  {
 color: #FFFFFF;
-background: #2196F3;
+background: var(--accent-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
  0px 1px 2px rgba(0, 0, 0, 0.08), 
  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-h3 {color: #212121;}
-p{color: #757575;}
+h2 {color: var(--title-color);}
 
-.footer { background: #2F303A;}
-.footer a { color:#FFFFFF;}
+.h2-title {font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,17;
+    text-align: center;}
+h3 {color: var(--title-color);
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    text-transform: uppercase;}
+.text { font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,71;
+    color: var(--primary_text-color);}
+.footer { background: #2F303A;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,71;}
+footer.logo {color: var(--accent-color);}
+.footer span {color:#FFFFFF;}
+.footer-map {color:#FFFFFF;}
+.footer  .list {color:#FFFFFF;}
+.footer-list {color: rgba(255, 255, 255, 0.6);}
 .footer a:hover,
 .footer a:focus
- {
-    color: #2196F3;
-}
+ { color: var(--accent-color)}
+
+ 
+
