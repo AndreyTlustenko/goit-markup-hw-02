@@ -1,6 +1,10 @@
 :root {--primary_text-color: #757575; 
 --title-color: #212121;
 --accent-color: #2196F3; 
+--button-color: #FFFFFF;
+--background-title:#2F303A;
+--background-button: #F5F4FA;
+--button-o:#188CE8;
 }
 
 body { font-family: "Roboto", sans-serif;
@@ -18,6 +22,8 @@ line-height: 1.14;
 .header a:hover,
 .header a:focus { color: var(--accent-color);}
 
+.curent-portfolio, .curent-studio {color: var(--accent-color);}
+
 .logo { 
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
@@ -28,9 +34,9 @@ line-height: 1.14;
     line-height: 1.19;
     }
 .logo-web {color: var(--title-color); font-style: normal;}
-.h1 {background: #2F303A; 
-    color: #FFFFFF; 
-    font-family: 'Roboto';
+.h1 {background: var(--background-title); 
+    color: var(--button-color); 
+    font-family: inherit;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -40,19 +46,28 @@ line-height: 1.14;
 ul {list-style: none;}
 a {text-decoration: none; }
 .button {
-font-family: "Roboto";
+font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 text-align: center;
 color: var(--title-color);
-background: #F5F4FA;
+background: var(--background-button);
 cursor: pointer;
 border: none;
 border-radius: 4px;
 }
-.button-order { color: #FFFFFF;
-    background: #2196F3; font-family: 'Roboto';
+.curent-button {color: var(--button-color); 
+    background: var(--accent-color); font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+}
+.button-order { color: var(--button-color);
+    background: var(--accent-color); font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -65,39 +80,41 @@ border-radius: 4px;
 .button-order:hover,
 .button-order:focus,
 .button-order:active { 
-    background: #188CE8;
+    background: var(--button-o);
 }
 
 .button:hover,
 .button:focus,
 .button:active
  {
-color: #FFFFFF;
-background: #2196F3;
+color: var(--button-color);
+background: var(--accent-color);
 border-radius: 4px;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
  0px 1px 2px rgba(0, 0, 0, 0.08), 
  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.comand-list {background: #F5F4FA;}
+.comand-list {background: var(--background-button);}
 .h2-title {color: var(--title-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center; }
-.h3-title { font-family: 'Roboto';
+.h3-title { font-family: inherit;
+    color: var(--title-color);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;}
-.h3-text { font-family: 'Roboto';
+    line-height: 1.14;
+    text-transform: uppercase;}
+.h3-text { font-family: inherit;
     color: var(--primary_text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;}
 .comand-title { 
-    font-family: 'Roboto';
+    font-family: inherit;
     color: var(--title-color); 
     font-style: normal;
 font-weight: 500;
@@ -106,7 +123,7 @@ line-height: 1.19px;
 text-decoration: none;
 }
 .comand-text { color: var(--primary_text-color);
-    font-family: 'Roboto';
+    font-family: inherit;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -114,13 +131,13 @@ line-height: 1.19;
 text-decoration: none;
 }
 .title {color: var(--title-color);  
-    font-family: "Roboto";
+    font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     line-height: 2; 
     text-decoration: none;
    }
-.text { font-family: "Roboto"; 
+.text { font-family: inherit; 
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -128,8 +145,8 @@ text-decoration: none;
     color: var(--primary_text-color);
     }
 
-.footer { background: #2F303A; 
-    font-family: "Roboto"; 
+.footer { background: var(--background-title);; 
+     
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;}
@@ -141,9 +158,9 @@ footer.logo {font-family: "Ralevey", sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;}
-.footer span {color:#FFFFFF;}
-.footer-map { text-decoration: none; color:#FFFFFF; font-style: normal;}
-.footer.list { color:#FFFFFF;}
+.footer span {color: var(--button-color);}
+.footer-map { text-decoration: none; color: var(--button-color); font-style: normal;}
+.footer.list { color: var(--button-color);}
 .footer-list {text-decoration: none; color: rgba(255, 255, 255, 0.6); font-style: normal;}
 .footer a:hover,
 .footer a:focus
