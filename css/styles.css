@@ -22,7 +22,8 @@ line-height: 1.14;
 .header a:hover,
 .header a:focus { color: var(--accent-color);}
 
-.curent-portfolio, .curent-studio {color: var(--accent-color);}
+.curent-portfolio, 
+.curent-studio {color: var(--accent-color);}
 
 .logo { 
     font-family: 'Raleway', sans-serif;
